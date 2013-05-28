@@ -365,7 +365,7 @@ $(document).ready(function() {
 });
 
 
-function make_css_from_object(css_array) {
+function make_css_from_object() {
   var css_string = "";
   var cssbefore = css_array;
   var selectorsLength = 0;
