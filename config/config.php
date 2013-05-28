@@ -2,15 +2,15 @@
 
 /* Config file */
 
-// load local information 
-require('local.php');
+
+define('LOCAL_ABS_PATH', '/* your local abs path here */');
 
 // constants
-define('PRODUCTION_URL','jasandpereza.com');
+define('PRODUCTION_URL','/* add yours here */');
 define('LOCAL_DEV_URL', 'designer-styles.dev');
 define('LOCAL_ROOT', LOCAL_ABS_PATH);
 define('ENVIRONMENT', (($_SERVER['SERVER_NAME'] == PRODUCTION_URL) ? 'production' : 'local_dev'));
-define('ABSPATH', ((ENVIRONMENT == 'production') ? '/www/labs/designer-styles/' :  LOCAL_ROOT));
+define('ABSPATH', ((ENVIRONMENT == 'production') ? '/* replace */' :  LOCAL_ROOT));
 define('PROJECT_ROOT','');
 define('BG_UPLOADS_DIR','bg-uploads');
 define('CSS_DIR','css');
