@@ -1,0 +1,66 @@
+body { background: rgb(231, 231, 231); font-family: Arial, Helvetica, sans-serif; }
+#container { width: 1024px; height: auto; min-height: 900px; display: block; margin: auto; margin-top: 20px; background: transparent; border: dashed thin #898989; }
+#c-bg { position:absolute; width:100%; height:100%; top:0; }
+.clear-me { display: block; clear: both; }
+#sidebar { width: 250px; height: 100%; padding: 20px; background: #565656; display: block; position: fixed; z-index: 100; top: 0; left: -227px; font-family: arial, sans-serif; font-size: 11px; color: #464646; }
+#sidebar > button { float: right; position: relative; right: -12px; border: inset #FFF 2px; background-color: transparent; width: 28%; text-align: right; text-transform: lowercase; color: rgb(97, 97, 97); box-shadow: -4px 1px 1px 0px rgb(218, 218, 218); background: -webkit-linear-gradient(top, rgb(246, 248, 249) 4%, rgb(227, 235, 238) 50%, rgb(215, 222, 227) 59%, rgb(245, 247, 253) 62%); }
+
+/* sidebar gradient */ 
+#sidebar {
+  background: #f6f8f9; /* Old browsers */
+  background: -moz-linear-gradient(left,  #f6f8f9 0%, #e5ebee 50%, #d7dee3 51%, #f5f7f9 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,#f6f8f9), color-stop(50%,#e5ebee), color-stop(51%,#d7dee3), color-stop(100%,#f5f7f9));        /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left,  #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left,  #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left,  #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); /* IE10+ */
+  background: linear-gradient(to right,  #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', endColorstr='#f5f7f9',GradientType=1 ); /* IE6-9 */
+  box-shadow: 2px 2px 13px 9px rgb(211, 211, 211);
+}
+
+#identifier { text-align: left; width: 100%; margin: auto; display: block; text-transform: uppercase; font-weight: bolder; font-size: 10px; color: rgb(63, 174, 184); }
+#sidebar select { float: right; clear: right; margin-bottom: 9px; }
+#sidebar select[name='font'] { width: 80%; }
+#sidebar select option { font-size: 10px; }
+#sidebar label { float: left; line-height: 21px; }
+#sidebar br { clear: both; margin-bottom: 10px; }
+#sidebar hr { clear: both; padding-top: 2px; }
+#sidebar textarea { width: 98%; height: 30px; margin-top: 28px; display: block !important; }
+
+#sidebar-internal { display: none; }
+
+/* shortcuts */
+#shortcuts_link { color: #484848; position: relative; z-index: 100; font-weight: bolder; margin-left: 300px; line-height: 25px; text-align: right; display: block; }
+#shortcuts_help { display: none; }
+#shortcuts { margin-left: 20px; font-size: 12px; color: #404040; line-height: 26px; }
+#shortcuts em { color: #599481 }
+#shortcuts b { font-weight: bolder; font-size: 15px; line-height: 17px; }
+
+/* User Editable Defaults */
+#user-editable { width: 56%; margin: auto; min-height: 901px; height: auto; padding-top: 12px; display: block; box-shadow: 0px -4px 5px 5px rgb(211, 211, 211); margin-top: 86px; margin-bottom: 35px; height: auto; }
+#user-editable { color: #2e2e2e; background-color: #FFF; }
+
+#user-editable p,
+#user-editable ol,
+#user-editable ul { margin : 10px; line-height: 20px; }
+
+#user-editable hr { margin: 20px; }
+
+#user-editable h1,
+#user-editable h2,
+#user-editable h3,
+#user-editable h4,
+#user-editable h5,
+#user-editable h6 { margin: 10px; }
+
+#user-editable cite { font-size: 11px; padding: 21px; display: block; }
+#user-editable p .img { width: 200px; height: auto; float: right; margin: 10px; display: block; }
+#user-editable p img { width: 100%; height: auto; }
+#user-editable .hovered { color: #a4a4a4; }
+#user-editable .this-active { box-shadow: 1px 1px 2px 1px blue; }
+
+/* exceptions to this-active */
+#user-editable input[type='checkbox'].this-active { border: solid thin blue; }
+#colorwheel { margin-left: 26px; }
+#colorwheel form { margin-left: 36px; }
+#sidebar label.units { float: right; }

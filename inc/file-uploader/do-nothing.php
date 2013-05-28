@@ -1,0 +1,9 @@
+<?php require('php.php'); ?>
+<?php 
+	$allowedExtensions = array("jpeg", "jpg", "png", "gif");
+	$sizeLimit = 10 * 1024 * 1024;
+	$uploader = new qqFileUploader($allowedExtensions, $sizeLimit);
+	$result = $uploader->handleUpload('../../bg-uploads/');
+?>
+
+{"success":true}
